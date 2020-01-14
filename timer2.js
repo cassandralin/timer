@@ -7,8 +7,8 @@ let newArray = [1, 5, 7]
 
 stdin.on('data', (key) => {
   if (key === '\u0003') {
-    process.exit();
     process.stdout.write('Thank you for using me, ciao!');
+    process.exit();
   } else if (key === "b"){
     process.stdout.write('\x07');
     process.exit();
